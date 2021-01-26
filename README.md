@@ -5,4 +5,5 @@ Adds RSS buttons to Youtube
 
 Currently adds to:
 - Channel Page
+- User Page
 <img src="docs/img/channel_button.png?raw=true" width="300">
