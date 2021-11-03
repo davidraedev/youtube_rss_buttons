@@ -21,7 +21,7 @@
 		this.channel_rss_link_css = `color: rgb( 255,255,255 ); text-decoration: none; font-size: 14px; font-weight: bold;`;
 		this.page;
 		this.channel_id;
-		this.debug = true;
+		this.debug = false;
 
 		this.init();
 	}
