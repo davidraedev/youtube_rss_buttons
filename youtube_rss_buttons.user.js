@@ -4,7 +4,7 @@
 // @description  Add RSS Buttons to Youtube
 // @homepageURL  https://github.com/daraeman/youtube_rss_buttons
 // @author       daraeman
-// @version      1.3.1
+// @version      1.3.2
 // @date         2022-02-13
 // @include      https://www.youtube.com/channel/*
 // @include      https://www.youtube.com/c/*
@@ -22,7 +22,7 @@
 		this.channel_rss_link_css = `color: rgb( 255,255,255 ); text-decoration: none; font-size: 14px; font-weight: bold;`;
 		this.page;
 		this.channel_id;
-		this.debug = true;
+		this.debug = false;
 		this.element_timeout = 1000;
 
 		this.init();

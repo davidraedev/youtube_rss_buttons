@@ -4,7 +4,7 @@
 // @description  Add RSS Buttons to Youtube
 // @homepageURL  https://github.com/daraeman/youtube_rss_buttons
 // @author       daraeman
-// @version      1.3.1
+// @version      1.3.2
 // @date         2022-02-13
 // @include      https://www.youtube.com/channel/*
 // @include      https://www.youtube.com/c/*
