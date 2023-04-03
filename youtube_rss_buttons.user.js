@@ -2,15 +2,16 @@
 // @name         Youtube Rss Buttons
 // @namespace    youtube_rss_buttons
 // @description  Add RSS Buttons to Youtube
-// @homepageURL  https://github.com/daraeman/youtube_rss_buttons
-// @author       daraeman
-// @version      1.3.2
-// @date         2022-02-13
+// @homepageURL  https://github.com/davidraedev/youtube_rss_buttons
+// @author       davidraedev
+// @version      1.3.3
+// @date         2023-04-03
 // @include      https://www.youtube.com/channel/*
 // @include      https://www.youtube.com/c/*
 // @include      https://www.youtube.com/user/*
-// @downloadURL  https://github.com/daraeman/youtube_rss_buttons/raw/master/youtube_rss_buttons.user.js
-// @updateURL    https://github.com/daraeman/youtube_rss_buttons/raw/master/youtube_rss_buttons.meta.js
+// @include      https://www.youtube.com/@*
+// @downloadURL  https://github.com/davidraedev/youtube_rss_buttons/raw/master/youtube_rss_buttons.user.js
+// @updateURL    https://github.com/davidraedev/youtube_rss_buttons/raw/master/youtube_rss_buttons.meta.js
 // ==/UserScript==
 
 (function(){
@@ -152,7 +153,8 @@
 		this.log( "YoutubeRssButtons getPage" );
 		
 		if ( /https:\/\/www\.youtube\.com\/channel\//.test( window.location )
-			|| /https:\/\/www\.youtube\.com\/c\//.test( window.location )   
+			|| /https:\/\/www\.youtube\.com\/c\//.test( window.location )
+			|| /https:\/\/www\.youtube\.com\/@/.test( window.location )
 		) {
 			return "channel";
 		}
