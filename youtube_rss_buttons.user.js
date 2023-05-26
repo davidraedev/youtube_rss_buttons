@@ -4,8 +4,8 @@
 // @description  Add RSS Buttons to Youtube
 // @homepageURL  https://github.com/davidraedev/youtube_rss_buttons
 // @author       davidraedev
-// @version      1.3.3
-// @date         2023-04-03
+// @version      1.3.4
+// @date         2023-05-26
 // @include      https://www.youtube.com/channel/*
 // @include      https://www.youtube.com/c/*
 // @include      https://www.youtube.com/user/*
@@ -68,7 +68,7 @@
 
 		let is_loaded = true;
 		
-		const channel_id = document.querySelector( `meta[itemprop="channelId"]` );
+		const channel_id = document.querySelector( `meta[itemprop="identifier"]` );
 		this.log( "channel_id", channel_id );
 		if ( typeof channel_id === "null" ) {
 			is_loaded = false;
@@ -98,7 +98,7 @@
 	YoutubeRssButtons.prototype.getChannelIdFromChannelPage = function() {
 		this.log( "YoutubeRssButtons getChannelIdFromChannelPage" );
 		
-		const channel_id = document.querySelector( `meta[itemprop="channelId"]` ).content;
+		const channel_id = document.querySelector( `meta[itemprop="identifier"]` ).content;
 		
 		this.log( "YoutubeRssButtons channel_id", channel_id );
 		
